@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script>
+        $(function() {
+            //$( "#datepicker" ).datepicker();
+        });
+    </script>
+    <!-- jQuery CDN link....
+           <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        -->
+    <meta charset="UTF-8">
+    <title>HTML5: Week One</title>
+    <!-- link to an external style sheet (best practice with style sheet)-->
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="page"><!-- everything that is visual goes in the body tag  -->
+<header>
+    <!-- the "banner" area or title of the page-->
+    <h1>PP PetCare Sign up</h1> <!-- only h1 per page (for SEO purposes) -->
+</header>
+<nav class="nav1">
+    <ul>
+        <!-- these links are relative paths -->
+        <li> <a href="#">home</a></li>
+        <li> <a href="#">gallery</a></li>
+        <li> <a href="sign-up.html">Sign Up Here</a></li>
+        <li> <a href="#">Mobile Site</a></li>
+        <li> <a href="http://www.google.com">Google</a></li>
+    </ul>
+</nav>
+<div id="mainContent">
+    <h3>If you want to access the PP PetCare online ressources, please create an account.</h3>
+    <!-- A Simple Form    -->
+    <form id="sign-up-form" method="post" action="#">
+        <fieldset>
+            <h2>PP PetCare Customer Sign Up</h2>
+            <ul>
+                <li>
+                    <label for="user-name">Username</label>
+                    <input type="text" name="user-name" id="user-name" placeholder="Username" required autofocus/>
+                </li>
+                <li>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Password" required/>
+                </li>
+                <li>
+                    <label>How do you like our brand: PP PetCare?</label>
+                    <input type="number" value="0" min="1" max="10" placeholder="0"/>
+                </li>
+                <li>
+                    <label for="pet-name">Your pet's name?</label>
+                    <input type="text" name="pet-name" id="pet-name" placeholder="Poppy" required/>
+                </li>
+                <li>
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" required placeholder="xxx@xxx.xx" autocomplete="on"/>
+                </li>
+                <li>
+                    <label>Your phone number?</label>
+                    <input type="tel" placeholder="xxx-xxx-xxxx" required autocomplete="on"/>
+                </li>
+                <li>
+                    <label for="user-date">Your PP PetCare Membership starts from?</label>
+                    <input type="date" name="user-date" id="user-date" min="2015-12-31"/>
+                </li>
+                <li>
+                    <label>Tell us your favorite pet website</label>
+                    <input type="url" placeholder="http://www.thevethouse.com"/>
+                </li>
+                <li>
+                    <label>Please describe your pet</label>
+                    <textarea placeholder="a brown dog? a naughty cat? whatever you want to share with us" maxlength="400"></textarea>
+                </li>
+                <li>
+                    <label>Any comments?Suggestions?</label>
+                    <textarea placeholder="Comments?Suggestions?" maxlength="400"></textarea>
+                </li>
+            </ul>
+            <input type="submit" value="Sign up now" name="submit"/>
+
+
+        </fieldset>
+
+
+
+
+</div><!-- closing maincContent div tag -->
+
+
+<!--  This is the footer section, only footer stuff -->
+<footer>
+    <p>&copy; copyright 2015</p>
+
+</footer>
+
+</body>
+</html>
